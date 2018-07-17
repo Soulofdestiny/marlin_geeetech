@@ -1402,8 +1402,10 @@
 #define PS_ON_PIN          12
 #define KILL_PIN           -1
 #define SUICIDE_PIN        54  //PIN that has to be turned on right after start, to keep power flowing.
-#define SERVO0_PIN         32 //13  // untested
-//#define SERVO0_PIN         11  //32//13  // untested
+// it's pin 32 (arduino pinout) for connecting to z-max
+// #define SERVO0_PIN         32 //13  // untested
+// GT2560 Rev A+ and newer have a dedicated PMW pin header on pin 11 (Arduino pinout)
+#define SERVO0_PIN         11  //32//13  // untested
 
 #ifdef ULTRA_LCD
 
