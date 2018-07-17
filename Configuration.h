@@ -334,9 +334,9 @@ const bool Z_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic o
 #define max_software_endstops true  // If true, axis won't move to coordinates greater than the defined lengths below.
 
 // Travel limits after homing
-#define X_MAX_POS 210
+#define X_MAX_POS 180
 #define X_MIN_POS 0
-#define Y_MAX_POS 210
+#define Y_MAX_POS 180
 #define Y_MIN_POS 0
 #define Z_MAX_POS 180
 #define Z_MIN_POS 0
@@ -372,8 +372,8 @@ const bool Z_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic o
 
     // set the rectangle in which to probe
     #define LEFT_PROBE_BED_POSITION 30
-    #define RIGHT_PROBE_BED_POSITION 200
-    #define BACK_PROBE_BED_POSITION 147
+    #define RIGHT_PROBE_BED_POSITION 150
+    #define BACK_PROBE_BED_POSITION 160
     #define FRONT_PROBE_BED_POSITION 20
 
      // set the number of grid points per dimension
@@ -397,9 +397,9 @@ const bool Z_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic o
 
   // these are the offsets to the probe relative to the extruder tip (Hotend - Probe)
   // X and Y offsets must be integers
-  #define X_PROBE_OFFSET_FROM_EXTRUDER 4
-  #define Y_PROBE_OFFSET_FROM_EXTRUDER -43
-  #define Z_PROBE_OFFSET_FROM_EXTRUDER -1.4
+  #define X_PROBE_OFFSET_FROM_EXTRUDER 17
+  #define Y_PROBE_OFFSET_FROM_EXTRUDER 58
+  #define Z_PROBE_OFFSET_FROM_EXTRUDER -3.5
 
   #define Z_RAISE_BEFORE_HOMING 4       // (in mm) Raise Z before homing (G28) for Probe Clearance.
                                         // Be sure you have this distance over your Z_MAX_POS in case
@@ -753,7 +753,7 @@ const bool Z_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic o
 // Use M206 command to correct for switch height offset to actual nozzle height. Store that setting with M500.
 //
 #define SERVO_ENDSTOPS {-1, -1, 0} // Servo index for X, Y, Z. Disable with -1
-#define SERVO_ENDSTOP_ANGLES {0,0, 0,0, 70,0} // X,Y,Z Axis Extend and Retract angles
+#define SERVO_ENDSTOP_ANGLES {0,0, 0,0, 10,90} // X,Y,Z Axis Extend and Retract angles
 
 /**********************************************************************\
  * Support for a filament diameter sensor
